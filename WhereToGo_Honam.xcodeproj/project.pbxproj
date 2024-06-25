@@ -24,6 +24,7 @@
 		9D7272AA2C2A9C5700503BD9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */; };
 		9D7272B12C2A9E3500503BD9 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B02C2A9E3500503BD9 /* AttractionTableViewCell.swift */; };
 		9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */; };
+		9D7272B62C2AB00300503BD9 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9D7272B02C2A9E3500503BD9 /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
 		9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanViewController.swift; sourceTree = "<group>"; };
+		9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			children = (
 				9D7272AF2C2A9DF000503BD9 /* IntroTable */,
 				9D7272742C2A5AAB00503BD9 /* LaunchScreen.storyboard */,
+				9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				9D7272A02C2A836B00503BD9 /* HomeViewController.swift in Sources */,
 				9D72726B2C2A5AAA00503BD9 /* MainTabBarViewController.swift in Sources */,
 				9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */,
+				9D7272B62C2AB00300503BD9 /* CollectionViewTableViewCell.swift in Sources */,
 				9D7272A42C2A837F00503BD9 /* NotificationViewController.swift in Sources */,
 				9D7272672C2A5AAA00503BD9 /* AppDelegate.swift in Sources */,
 				9D7272A82C2A974500503BD9 /* ProfileViewController.swift in Sources */,
