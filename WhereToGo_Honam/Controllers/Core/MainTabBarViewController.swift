@@ -22,27 +22,41 @@ class MainTabBarViewController: UITabBarController{
         
         let homeVC = UINavigationController(rootViewController: HomeViewController())
         let searchVC = UINavigationController(rootViewController: SearchViewController())
-        let notificationVC = UINavigationController(rootViewController: NotificationViewController())
-        let directMessageVC = UINavigationController(rootViewController: DirectMessageViewController())
         
+        // let notificationVC = UINavigationController(rootViewController: NotificationViewController())
+        // let directMessageVC = UINavigationController(rootViewController: DirectMessageViewController())
+        
+        let addPlanVC = UINavigationController(rootViewController: AddPlanViewController())
+        
+        let chatVC = UINavigationController(rootViewController: ChatViewController())
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
         homeVC.tabBarItem.image = UIImage(systemName: "house")
         homeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fille")
         
         searchVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         
-        notificationVC.tabBarItem.image = UIImage(systemName: "bell")
-        notificationVC.tabBarItem.selectedImage = UIImage(systemName: "bell.fill")
+        // notificationVC.tabBarItem.image = UIImage(systemName: "bell")
+        // notificationVC.tabBarItem.selectedImage = UIImage(systemName: "bell.fill")
         
-        directMessageVC.tabBarItem.image = UIImage(systemName: "envelope")
-        directMessageVC.tabBarItem.selectedImage = UIImage(systemName: "envelope.fill")
+        // directMessageVC.tabBarItem.image = UIImage(systemName: "envelope")
+        // directMessageVC.tabBarItem.selectedImage = UIImage(systemName: "envelope.fill")
+        
+        addPlanVC.tabBarItem.image = UIImage(systemName: "plus.circle")
+        addPlanVC.tabBarItem.selectedImage = UIImage(systemName: "plus.circle.fill")
+        
+        chatVC.tabBarItem.image = UIImage(systemName: "text.bubble")
+        chatVC.tabBarItem.selectedImage = UIImage(systemName: "text.bubble.fill")
+        
+        profileVC.tabBarItem.image = UIImage(systemName: "person.circle")
+        profileVC.tabBarItem.selectedImage = UIImage(systemName: "person.circle.fill")
         
         tabBar.tintColor = .label
         tabBar.unselectedItemTintColor = .darkGray
         
         setupTabbarColor()
         
-        setViewControllers([homeVC, searchVC, notificationVC, directMessageVC], animated: true)
+        setViewControllers([homeVC, searchVC, addPlanVC,chatVC, profileVC], animated: true)
     }
     
     func setupTabbarColor() {
