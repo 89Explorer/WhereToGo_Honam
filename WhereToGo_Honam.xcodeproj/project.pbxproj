@@ -16,6 +16,10 @@
 		9D7272812C2A5AAB00503BD9 /* WhereToGo_HonamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272802C2A5AAB00503BD9 /* WhereToGo_HonamTests.swift */; };
 		9D72728B2C2A5AAC00503BD9 /* WhereToGo_HonamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72728A2C2A5AAC00503BD9 /* WhereToGo_HonamUITests.swift */; };
 		9D72728D2C2A5AAC00503BD9 /* WhereToGo_HonamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72728C2C2A5AAC00503BD9 /* WhereToGo_HonamUITestsLaunchTests.swift */; };
+		9D7272A02C2A836B00503BD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72729F2C2A836B00503BD9 /* HomeViewController.swift */; };
+		9D7272A22C2A837300503BD9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A12C2A837300503BD9 /* SearchViewController.swift */; };
+		9D7272A42C2A837F00503BD9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A32C2A837F00503BD9 /* NotificationViewController.swift */; };
+		9D7272A62C2A839300503BD9 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A52C2A839300503BD9 /* DirectMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9D7272862C2A5AAC00503BD9 /* WhereToGo_HonamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereToGo_HonamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D72728A2C2A5AAC00503BD9 /* WhereToGo_HonamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereToGo_HonamUITests.swift; sourceTree = "<group>"; };
 		9D72728C2C2A5AAC00503BD9 /* WhereToGo_HonamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereToGo_HonamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D72729F2C2A836B00503BD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D7272A12C2A837300503BD9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9D7272A32C2A837F00503BD9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		9D7272A52C2A839300503BD9 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +138,7 @@
 		9D7272992C2A788100503BD9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D72726A2C2A5AAA00503BD9 /* MainTabBarViewController.swift */,
+				9D72729E2C2A835000503BD9 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +173,18 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9D72729E2C2A835000503BD9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D72726A2C2A5AAA00503BD9 /* MainTabBarViewController.swift */,
+				9D72729F2C2A836B00503BD9 /* HomeViewController.swift */,
+				9D7272A12C2A837300503BD9 /* SearchViewController.swift */,
+				9D7272A32C2A837F00503BD9 /* NotificationViewController.swift */,
+				9D7272A52C2A839300503BD9 /* DirectMessageViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7272A22C2A837300503BD9 /* SearchViewController.swift in Sources */,
+				9D7272A62C2A839300503BD9 /* DirectMessageViewController.swift in Sources */,
+				9D7272A02C2A836B00503BD9 /* HomeViewController.swift in Sources */,
 				9D72726B2C2A5AAA00503BD9 /* MainTabBarViewController.swift in Sources */,
+				9D7272A42C2A837F00503BD9 /* NotificationViewController.swift in Sources */,
 				9D7272672C2A5AAA00503BD9 /* AppDelegate.swift in Sources */,
 				9D7272712C2A5AAA00503BD9 /* WhereToGo_Honam.xcdatamodeld in Sources */,
 				9D7272692C2A5AAA00503BD9 /* SceneDelegate.swift in Sources */,
