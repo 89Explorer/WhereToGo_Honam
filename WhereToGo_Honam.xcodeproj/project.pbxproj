@@ -24,8 +24,11 @@
 		9D7272AA2C2A9C5700503BD9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */; };
 		9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */; };
 		9D7272B62C2AB00300503BD9 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */; };
-		9D7272B92C2BC80800503BD9 /* IntroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */; };
 		9D7272BD2C2BE85E00503BD9 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272BC2C2BE85E00503BD9 /* APICaller.swift */; };
+		9D7272C52C2C57FE00503BD9 /* SavedSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272C42C2C57FE00503BD9 /* SavedSpotViewController.swift */; };
+		9D7272C72C2C7A6200503BD9 /* CatergoryMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272C62C2C7A6200503BD9 /* CatergoryMenuHeader.swift */; };
+		9D7272C92C2C7B3300503BD9 /* CategoryMenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272C82C2C7B3300503BD9 /* CategoryMenuViewDelegate.swift */; };
+		9D7272CB2C2C7D0800503BD9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272CA2C2C7D0800503BD9 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +70,11 @@
 		9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanViewController.swift; sourceTree = "<group>"; };
 		9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
-		9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroHeaderUIView.swift; sourceTree = "<group>"; };
 		9D7272BC2C2BE85E00503BD9 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		9D7272C42C2C57FE00503BD9 /* SavedSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpotViewController.swift; sourceTree = "<group>"; };
+		9D7272C62C2C7A6200503BD9 /* CatergoryMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatergoryMenuHeader.swift; sourceTree = "<group>"; };
+		9D7272C82C2C7B3300503BD9 /* CategoryMenuViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMenuViewDelegate.swift; sourceTree = "<group>"; };
+		9D7272CA2C2C7D0800503BD9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				9D7272662C2A5AAA00503BD9 /* AppDelegate.swift */,
 				9D7272682C2A5AAA00503BD9 /* SceneDelegate.swift */,
 				9D7272722C2A5AAB00503BD9 /* Assets.xcassets */,
+				9D7272C82C2C7B3300503BD9 /* CategoryMenuViewDelegate.swift */,
 			);
 			path = Rescources;
 			sourceTree = "<group>";
@@ -207,6 +214,7 @@
 		9D7272AB2C2A9CD000503BD9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				9D7272C32C2C57D500503BD9 /* Saved */,
 				9D7272AE2C2A9D3E00503BD9 /* Notification */,
 				9D7272AD2C2A9D3300503BD9 /* Message */,
 				9D7272AC2C2A9D2800503BD9 /* Search */,
@@ -240,7 +248,7 @@
 		9D7272B72C2BC7E300503BD9 /* TableHeader */ = {
 			isa = PBXGroup;
 			children = (
-				9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */,
+				9D7272C62C2C7A6200503BD9 /* CatergoryMenuHeader.swift */,
 			);
 			path = TableHeader;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */,
+				9D7272CA2C2C7D0800503BD9 /* CategoryCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -259,6 +268,14 @@
 				9D7272BC2C2BE85E00503BD9 /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		9D7272C32C2C57D500503BD9 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				9D7272C42C2C57FE00503BD9 /* SavedSpotViewController.swift */,
+			);
+			path = Saved;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,14 +408,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7272B92C2BC80800503BD9 /* IntroHeaderUIView.swift in Sources */,
+				9D7272C52C2C57FE00503BD9 /* SavedSpotViewController.swift in Sources */,
 				9D7272A22C2A837300503BD9 /* SearchViewController.swift in Sources */,
 				9D7272A62C2A839300503BD9 /* DirectMessageViewController.swift in Sources */,
 				9D7272BD2C2BE85E00503BD9 /* APICaller.swift in Sources */,
+				9D7272CB2C2C7D0800503BD9 /* CategoryCell.swift in Sources */,
 				9D7272A02C2A836B00503BD9 /* HomeViewController.swift in Sources */,
 				9D72726B2C2A5AAA00503BD9 /* MainTabBarViewController.swift in Sources */,
 				9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */,
+				9D7272C92C2C7B3300503BD9 /* CategoryMenuViewDelegate.swift in Sources */,
 				9D7272B62C2AB00300503BD9 /* CollectionViewTableViewCell.swift in Sources */,
+				9D7272C72C2C7A6200503BD9 /* CatergoryMenuHeader.swift in Sources */,
 				9D7272A42C2A837F00503BD9 /* NotificationViewController.swift in Sources */,
 				9D7272672C2A5AAA00503BD9 /* AppDelegate.swift in Sources */,
 				9D7272A82C2A974500503BD9 /* ProfileViewController.swift in Sources */,

@@ -26,6 +26,8 @@ class MainTabBarViewController: UITabBarController{
         // let notificationVC = UINavigationController(rootViewController: NotificationViewController())
         // let directMessageVC = UINavigationController(rootViewController: DirectMessageViewController())
         
+        let savedVC = UINavigationController(rootViewController: SavedSpotViewController())
+        
         let addPlanVC = UINavigationController(rootViewController: AddPlanViewController())
         
         let chatVC = UINavigationController(rootViewController: ChatViewController())
@@ -35,8 +37,13 @@ class MainTabBarViewController: UITabBarController{
         homeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fille")
         homeVC.tabBarItem.title = "Home"
         
+        
         searchVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         searchVC.tabBarItem.title = "Search"
+        
+        savedVC.tabBarItem.image = UIImage(systemName: "bookmark")
+        savedVC.tabBarItem.selectedImage = UIImage(systemName: "bookmark.fill")
+        savedVC.tabBarItem.title = "Saved"
         // notificationVC.tabBarItem.image = UIImage(systemName: "bell")
         // notificationVC.tabBarItem.selectedImage = UIImage(systemName: "bell.fill")
         
@@ -60,7 +67,7 @@ class MainTabBarViewController: UITabBarController{
         
         setupTabbarColor()
         
-        setViewControllers([homeVC, searchVC, addPlanVC,chatVC, profileVC], animated: true)
+        setViewControllers([homeVC, savedVC, addPlanVC,chatVC, profileVC], animated: true)
     }
     
     func setupTabbarColor() {
