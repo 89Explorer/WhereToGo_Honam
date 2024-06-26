@@ -8,14 +8,25 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    // MARK: - Variables
+    let sectionTitles: [String] = ["관광지", "문화시설", "숙박", "쇼핑", "음식점"]
 
     // MARK: - UI Components
     private let attractionTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
+        tableView.backgroundColor = .clear
         return tableView
     }()
     
+    private let paddingView: UIView = {
+        let view = UIView()
+        // view.translatesAutoresizingMaskIntoConstraints = false
+        view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 10)
+        view.backgroundColor = .systemBackground
+        return view
+    }()
     
 
     // MARK: - Life Cycle
@@ -24,7 +35,13 @@ class HomeViewController: UIViewController {
         
         view.addSubview(attractionTableView)
         
-        attractionTableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        let headerView = IntroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
+        
+        headerView.addSubview(paddingView)
+         
+        attractionTableView.tableHeaderView = headerView
+        
+        
         
         setupTableViewDelegate()
         setupNavigationItems()
@@ -51,8 +68,11 @@ class HomeViewController: UIViewController {
         notificationItem.tintColor = .label
         
 //        let signoutItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .plain, target: self, action: #selector(didTapSignout))
+        
+        let savedItem = UIBarButtonItem(image: UIImage(systemName: "bookmark"), style: .plain, target: self, action: #selector(didTapSaved))
+        savedItem.tintColor = .label
 
-        navigationItem.rightBarButtonItem = notificationItem
+        navigationItem.rightBarButtonItems = [notificationItem, savedItem]
     }
     
     private func setupNavigationTitle() {
@@ -65,7 +85,12 @@ class HomeViewController: UIViewController {
         
     }
     
+    @objc private func didTapSaved() {
+        
+    }
 //    @objc private func didTapSignout() { }
+    
+    
 }
 
 
@@ -74,10 +99,10 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return sectionTitles.count
     }
     
-    // section 안의 갯수 
+    // section 안의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -91,7 +116,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 200
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 40
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
+        header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 10, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
+        header.textLabel?.textColor = .label
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
     }
 }

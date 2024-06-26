@@ -33,9 +33,10 @@ class MainTabBarViewController: UITabBarController{
         
         homeVC.tabBarItem.image = UIImage(systemName: "house")
         homeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fille")
+        homeVC.tabBarItem.title = "Home"
         
         searchVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        
+        searchVC.tabBarItem.title = "Search"
         // notificationVC.tabBarItem.image = UIImage(systemName: "bell")
         // notificationVC.tabBarItem.selectedImage = UIImage(systemName: "bell.fill")
         
@@ -44,12 +45,15 @@ class MainTabBarViewController: UITabBarController{
         
         addPlanVC.tabBarItem.image = UIImage(systemName: "plus.circle")
         addPlanVC.tabBarItem.selectedImage = UIImage(systemName: "plus.circle.fill")
+        addPlanVC.tabBarItem.title = "Plan"
         
         chatVC.tabBarItem.image = UIImage(systemName: "text.bubble")
         chatVC.tabBarItem.selectedImage = UIImage(systemName: "text.bubble.fill")
+        chatVC.tabBarItem.title = "Message"
         
         profileVC.tabBarItem.image = UIImage(systemName: "person.circle")
         profileVC.tabBarItem.selectedImage = UIImage(systemName: "person.circle.fill")
+        profileVC.tabBarItem.title = "Profile"
         
         tabBar.tintColor = .label
         tabBar.unselectedItemTintColor = .darkGray

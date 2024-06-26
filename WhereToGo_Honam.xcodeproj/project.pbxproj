@@ -22,9 +22,10 @@
 		9D7272A62C2A839300503BD9 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A52C2A839300503BD9 /* DirectMessageViewController.swift */; };
 		9D7272A82C2A974500503BD9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A72C2A974500503BD9 /* ProfileViewController.swift */; };
 		9D7272AA2C2A9C5700503BD9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */; };
-		9D7272B12C2A9E3500503BD9 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B02C2A9E3500503BD9 /* AttractionTableViewCell.swift */; };
 		9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */; };
 		9D7272B62C2AB00300503BD9 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */; };
+		9D7272B92C2BC80800503BD9 /* IntroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */; };
+		9D7272BD2C2BE85E00503BD9 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7272BC2C2BE85E00503BD9 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +65,10 @@
 		9D7272A52C2A839300503BD9 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
 		9D7272A72C2A974500503BD9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9D7272A92C2A9C5700503BD9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		9D7272B02C2A9E3500503BD9 /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
 		9D7272B22C2AA02500503BD9 /* AddPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanViewController.swift; sourceTree = "<group>"; };
 		9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroHeaderUIView.swift; sourceTree = "<group>"; };
+		9D7272BC2C2BE85E00503BD9 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		9D7272652C2A5AAA00503BD9 /* WhereToGo_Honam */ = {
 			isa = PBXGroup;
 			children = (
+				9D7272BB2C2BE84D00503BD9 /* Managers */,
 				9D72729A2C2A789300503BD9 /* Rescources */,
 				9D72729D2C2A78CF00503BD9 /* Models */,
 				9D72729B2C2A78BE00503BD9 /* Views */,
@@ -167,9 +170,9 @@
 		9D72729B2C2A78BE00503BD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9D7272AF2C2A9DF000503BD9 /* IntroTable */,
+				9D7272BA2C2BDDB600503BD9 /* CollectionView */,
+				9D7272B72C2BC7E300503BD9 /* TableHeader */,
 				9D7272742C2A5AAB00503BD9 /* LaunchScreen.storyboard */,
-				9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,12 +237,28 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
-		9D7272AF2C2A9DF000503BD9 /* IntroTable */ = {
+		9D7272B72C2BC7E300503BD9 /* TableHeader */ = {
 			isa = PBXGroup;
 			children = (
-				9D7272B02C2A9E3500503BD9 /* AttractionTableViewCell.swift */,
+				9D7272B82C2BC80800503BD9 /* IntroHeaderUIView.swift */,
 			);
-			path = IntroTable;
+			path = TableHeader;
+			sourceTree = "<group>";
+		};
+		9D7272BA2C2BDDB600503BD9 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9D7272B52C2AB00300503BD9 /* CollectionViewTableViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9D7272BB2C2BE84D00503BD9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9D7272BC2C2BE85E00503BD9 /* APICaller.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7272B92C2BC80800503BD9 /* IntroHeaderUIView.swift in Sources */,
 				9D7272A22C2A837300503BD9 /* SearchViewController.swift in Sources */,
 				9D7272A62C2A839300503BD9 /* DirectMessageViewController.swift in Sources */,
+				9D7272BD2C2BE85E00503BD9 /* APICaller.swift in Sources */,
 				9D7272A02C2A836B00503BD9 /* HomeViewController.swift in Sources */,
 				9D72726B2C2A5AAA00503BD9 /* MainTabBarViewController.swift in Sources */,
 				9D7272B32C2AA02500503BD9 /* AddPlanViewController.swift in Sources */,
@@ -383,7 +404,6 @@
 				9D7272A82C2A974500503BD9 /* ProfileViewController.swift in Sources */,
 				9D7272712C2A5AAA00503BD9 /* WhereToGo_Honam.xcdatamodeld in Sources */,
 				9D7272AA2C2A9C5700503BD9 /* ChatViewController.swift in Sources */,
-				9D7272B12C2A9E3500503BD9 /* AttractionTableViewCell.swift in Sources */,
 				9D7272692C2A5AAA00503BD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
